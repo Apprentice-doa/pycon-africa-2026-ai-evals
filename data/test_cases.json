@@ -1,0 +1,48 @@
+[
+  {
+    "question": "Do I need a visa to go from Kenya to Rwanda?",
+    "response": "For travel from Kenya to Rwanda, you may need a visa. Please check with the Rwandan embassy for current requirements.",
+    "ground_truth": "No visa needed. Kenyan citizens can enter Rwanda freely under EAC free movement.",
+    "thumbs_up": false,
+    "comment": "Wrong answer, no source",
+    "version": "v1"
+  },
+  {
+    "question": "Do I need a visa to go from Kenya to Rwanda?",
+    "response": "**No visa needed.** As a Kenyan citizen, you can enter Rwanda visa-free under the EAC free movement protocol. You only need a valid Kenyan national ID or passport.\n\n**Source**: https://www.migration.go.ke/eac-free-movement",
+    "ground_truth": "No visa needed. Kenyan citizens can enter Rwanda freely under EAC free movement.",
+    "thumbs_up": true,
+    "comment": "Clear, correct, has source",
+    "version": "v2"
+  },
+  {
+    "question": "Can I travel from Uganda to Tanzania with just my national ID?",
+    "response": "I'm not sure about the specific requirements. You should verify with the Tanzanian embassy as requirements may vary.",
+    "ground_truth": "Yes, EAC citizens can travel within the bloc using national ID.",
+    "thumbs_up": false,
+    "comment": "Useless non-answer",
+    "version": "v1"
+  },
+  {
+    "question": "Can I travel from Uganda to Tanzania with just my national ID?",
+    "response": "**Yes.** As a Ugandan citizen, you can enter Tanzania using your national ID under the EAC free movement protocol. No passport required for EAC member state travel.\n\n**Source**: https://www.eac.int/free-movement",
+    "ground_truth": "Yes, EAC citizens can travel within the bloc using national ID.",
+    "thumbs_up": true,
+    "version": "v2"
+  },
+  {
+    "question": "What documents do I need to travel from Burundi to South Sudan?",
+    "response": "Travel requirements between Burundi and South Sudan can be complex. I recommend contacting the South Sudanese embassy for current visa requirements.",
+    "ground_truth": "Both are EAC members. National ID is sufficient for entry.",
+    "thumbs_up": false,
+    "comment": "Didn't know about EAC",
+    "version": "v1"
+  },
+  {
+    "question": "What documents do I need to travel from Burundi to South Sudan?",
+    "response": "**National ID is sufficient.** Both Burundi and South Sudan are EAC member states, so you can travel freely with your national ID under the EAC free movement protocol.\n\n**Source**: https://www.eac.int/member-states",
+    "ground_truth": "Both are EAC members. National ID is sufficient for entry.",
+    "thumbs_up": true,
+    "version": "v2"
+  }
+]

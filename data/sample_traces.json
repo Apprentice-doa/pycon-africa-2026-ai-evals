@@ -1,0 +1,101 @@
+[
+  {
+    "trace_id": "v1-abc123",
+    "prompt_version": "v1",
+    "question": "Do I need a visa to go from Kenya to Rwanda?",
+    "response": "For travel from Kenya to Rwanda, you will likely need a visa. I recommend checking with the Rwandan embassy for the most current requirements as visa policies can change frequently.",
+    "spans": [
+      {
+        "name": "ask_question",
+        "duration_ms": 2340,
+        "children": [
+          {
+            "name": "web_search",
+            "duration_ms": 890,
+            "attributes": {
+              "query": "Kenya Rwanda visa requirements",
+              "results_count": 5,
+              "top_result": "Rwanda visa requirements - VisaHQ (2019)"
+            }
+          },
+          {
+            "name": "llm_call",
+            "duration_ms": 1420,
+            "attributes": {
+              "model": "gpt-4o-mini",
+              "prompt_tokens": 89,
+              "completion_tokens": 67
+            }
+          }
+        ]
+      }
+    ],
+    "feedback": {
+      "thumbs_up": false,
+      "comment": "Wrong! I'm Kenyan and I've been to Rwanda many times with just my ID"
+    }
+  },
+  {
+    "trace_id": "v2-def456",
+    "prompt_version": "v2",
+    "question": "Do I need a visa to go from Kenya to Rwanda?",
+    "response": "**No visa needed.** As a Kenyan citizen, you can enter Rwanda visa-free under the EAC free movement protocol. You only need a valid Kenyan national ID or passport.\n\n**Source**: https://www.migration.go.ke/eac-free-movement",
+    "spans": [
+      {
+        "name": "ask_question",
+        "duration_ms": 1890,
+        "children": [
+          {
+            "name": "check_eac_status",
+            "duration_ms": 120,
+            "attributes": {
+              "origin": "Kenya",
+              "destination": "Rwanda",
+              "both_eac": true
+            }
+          },
+          {
+            "name": "llm_call",
+            "duration_ms": 1650,
+            "attributes": {
+              "model": "gpt-4o-mini",
+              "prompt_tokens": 245,
+              "completion_tokens": 89
+            }
+          }
+        ]
+      }
+    ],
+    "feedback": {
+      "thumbs_up": true,
+      "comment": "Finally! Correct answer with a source"
+    }
+  },
+  {
+    "trace_id": "v1-ghi789",
+    "prompt_version": "v1",
+    "question": "Can I travel from Uganda to Tanzania with just my national ID?",
+    "response": "I'm not entirely sure about the specific requirements for traveling from Uganda to Tanzania. Visa and entry requirements can vary, so I recommend checking with the Tanzanian embassy or consulate for the most accurate and up-to-date information.",
+    "spans": [
+      {
+        "name": "ask_question",
+        "duration_ms": 1560,
+        "children": [
+          {
+            "name": "llm_call",
+            "duration_ms": 1560,
+            "attributes": {
+              "model": "gpt-4o-mini",
+              "prompt_tokens": 78,
+              "completion_tokens": 54
+            }
+          }
+        ]
+      }
+    ],
+    "feedback": {
+      "thumbs_up": false,
+      "comment": "Useless. Didn't even try to answer."
+    }
+  }
+]
